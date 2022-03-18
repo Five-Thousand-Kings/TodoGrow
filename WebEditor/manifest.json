@@ -31,6 +31,6 @@
   "start_url": "/TodoGrow/WebEditor/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#FFFFFF",
-  "theme_color": "#FFFFFF"
+  "background_color": "#1b1e24",
+  "theme_color": "#1b1e24"
 }
