@@ -100,6 +100,11 @@ function update(text) {
         match: /^(random)/,
       },
       {
+        name: "plant",
+        match:
+          /^(salad|carrot|eggplant|onion|garlic|bellpepper|rice|action-tokens)/,
+      },
+      {
         name: "comment",
         match: /^(\/\/[a-zA-Z _.\d]+)/,
       },
