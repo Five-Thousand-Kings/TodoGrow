@@ -1,4 +1,6 @@
-# TodoGrow.Wiki
-The Wiki of the In-Works game TODO:GROW
+# TODO:Grow
+This is a collection of tools for the discord-driven game "TODO:Grow" by bluewingtitan.
 
-[You propably want to go here.](https://github.com/Five-Thousand-Kings/TodoGrow.Wiki/wiki)
+[Web-Editor](https://five-thousand-kings.github.io/TodoGrow.Wiki/WebEditor/)
+
+[Read the wiki](https://github.com/Five-Thousand-Kings/TodoGrow.Wiki/wiki)
