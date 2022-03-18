@@ -3,6 +3,10 @@ a {
   color: #eceff4;
 }
 
+p {
+  font-size: small;
+}
+
 body {
   color: #eceff4;
   background-color: #1b1e24;
