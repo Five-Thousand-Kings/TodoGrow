@@ -102,7 +102,7 @@ function update(text) {
       {
         name: "plant",
         match:
-          /^(salad|carrot|eggplant|onion|garlic|bellpepper|rice|action-tokens)/,
+          /^(salad|carrot|eggplant|onion|garlic|bellpepper|rice|action\-tokens)/,
       },
       {
         name: "comment",
