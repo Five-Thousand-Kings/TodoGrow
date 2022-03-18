@@ -3,32 +3,32 @@
   "short_name": "pbsWeb",
   "icons": [
     {
-      "src": "/icon128.png",
+      "src": "/TodoGrow/WebEditor/icon128.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "/icon144.png",
+      "src": "/TodoGrow/WebEditor/icon144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/icon152.png",
+      "src": "/TodoGrow/WebEditor/icon152.png",
       "sizes": "152x152",
       "type": "image/png"
     },
     {
-      "src": "/icon196.png",
+      "src": "/TodoGrow/WebEditor/icon196.png",
       "sizes": "196x196",
       "type": "image/png"
     },
     {
-      "src": "/icon512.png",
+      "src": "/TodoGrow/WebEditor/icon512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/TodoGrow/WebEditor/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFFFFF",
