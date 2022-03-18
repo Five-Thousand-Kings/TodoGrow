@@ -5,6 +5,9 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
       rel="stylesheet"
     />
+    
+  <link rel="icon" type="image/x-icon" href="/icon128.png">
+  <link rel="manifest" href="/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +16,15 @@
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
     <script src="index.js"></script>
     <script src="https://unpkg.com/custom-syntax-highlighter@latest/bin/index.js"></script>
+    <script>
+// Check that service workers are supported
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
   </head>
   <body>
     <p style="text-align: center;">
