@@ -1,6 +1,28 @@
 // I know, this is a hardcoded mess... But it does what it should do, so...
 
+function download(filename, text) {
+  var element = document.createElement("a");
+  element.setAttribute(
+    "href",
+    "data:text/plain;charset=utf-8," + encodeURIComponent(text)
+  );
+  element.setAttribute("download", filename);
+
+  element.style.display = "none";
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+function downloadNow() {
+  download("script.pbs", tx);
+}
+var tx;
+
 function update(text) {
+  tx = text;
   let result_element = document.querySelector("#highlighting-content");
   // Handle final newlines (see article)
   if (text[text.length - 1] == "\n") {
