@@ -1,4 +1,13 @@
 /* custom highlighting */
+a {
+  color: #eceff4;
+}
+
+body {
+  color: #eceff4;
+  background-color: #1b1e24;
+}
+
 .variable,
 .varkey {
   color: #d08770;
@@ -40,15 +49,6 @@
 .iactionpre,
 .iactionpre2 {
   color: #5e81ac99;
-}
-
-a {
-  color: #eceff4;
-}
-
-body {
-  color: #eceff4;
-  background-color: #1b1e24;
 }
 
 #editing,
