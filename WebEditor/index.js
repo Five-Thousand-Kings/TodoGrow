@@ -61,11 +61,11 @@ function update(text) {
       },
       {
         name: "prequire",
-        match: [/^(require[ ]+$)/, "", "…"],
+        match: [/^(request[ ]+$)/, "", "…"],
       },
       {
         name: "require",
-        match: /^(require [a-zA-Z _.\d]+)/,
+        match: /^(request [a-zA-Z _.\d]+)/,
       },
       {
         name: "iactionpre",
