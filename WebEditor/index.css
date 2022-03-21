@@ -30,6 +30,7 @@ body {
 }
 
 .token {
+  font-weight: bold;
   color: #ebcb8b;
 }
 
@@ -37,7 +38,7 @@ body {
   color: #5e81ac;
 }
 
-.plant {
+.string {
   color: #a3be8c;
 }
 

@@ -44,7 +44,7 @@ function update(text) {
         match: [/^((while|if|elseif)[ ]*$)/, "", "…"],
       },
       {
-        name: "conditionalchecked", // /^((while|if|elseif) [()+\-*\/%\$a-zA-Z _.\d]+)/,
+        name: "conditionalchecked", // /^((while|if|elseif) [\(\)+\-*\/%\$a-zA-Z _.\d]+)/,
         match: /^((while|if|elseif))/,
       },
       {
@@ -53,19 +53,31 @@ function update(text) {
       },
       {
         name: "token",
-        match: /^([><\-+%=])/,
+        match: /^(and|or|not|[><\-+%=])/,
+      },
+      {
+        name: "token",
+        match: /^(set|add|remove|rmv|divide|div|multiply|mtp|ply|up|down)/,
+      },
+      {
+        name: "number",
+        match: /^([\d]+)/,
+      },
+      {
+        name: "string",
+        match: /^("[\(\)+\-*\/%\$a-zA-Z ,_.\d]*")/,
       },
       {
         name: "varkey",
-        match: /^(var)/,
+        match: /^(var)[ ]*$[a-zA-Z _.\d]*/,
       },
       {
         name: "prequire",
-        match: [/^(request[ ]+$)/, "", "…"],
+        match: [/^(request[ ]*$)/, "", "…"],
       },
       {
         name: "require",
-        match: /^(request [a-zA-Z _.\d]+)/,
+        match: /^(request[ ]*[a-zA-Z _.\d]+)/,
       },
       {
         name: "iactionpre",
@@ -97,16 +109,11 @@ function update(text) {
       },
       {
         name: "iaction",
-        match: /^(random)/,
-      },
-      {
-        name: "plant",
-        match:
-          /^(salad|carrot|eggplant|onion|garlic|bellpepper|rice|action\-tokens)/,
+        match: /^((random (number|bool|boolean))|random[ ]*$)/,
       },
       {
         name: "comment",
-        match: /^(\/\/[a-zA-Z _.\d]+)/,
+        match: /^(\/\/[\(\)+\-*\/%\$a-zA-Z<>=\/\\+\-% ,_.\d]+)/,
       },
     ],
     selector: "pre pre",
