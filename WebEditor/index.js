@@ -93,7 +93,7 @@ function update(text) {
       },
       {
         name: "iaction",
-        match: /^((i|me) (harvest|move (left|right|up|down)|moved|plant))/,
+        match: /^((i|me) (harvest|move "(left|right|up|down)"|moved|plant))/,
       },
       {
         name: "iaction",
@@ -105,7 +105,11 @@ function update(text) {
       },
       {
         name: "iaction",
-        match: /^(crop (is|isnot) ([a-z]+))/,
+        match: /^(crop)/,
+      },
+      {
+        name: "iaction", // stuff like varname is number
+        match: /^((is|isnot) ([a-z]+))/,
       },
       {
         name: "iaction",
