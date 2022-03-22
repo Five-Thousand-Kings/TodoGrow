@@ -77,7 +77,7 @@ function update(text) {
       },
       {
         name: "require",
-        match: /^(request[ ]*[a-zA-Z _.\d]+)/,
+        match: /^(request[ ]*[a-zA-Z \/_.\d]+)/,
       },
       {
         name: "iactionpre",
