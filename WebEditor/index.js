@@ -65,11 +65,11 @@ function update(text) {
       },
       {
         name: "string",
-        match: /^("[\(\)+\-*\/%\$a-zA-Z ,_.\d]*")/,
+        match: /^("[\(\)+\-*\/%\$a-zA-Z ,_\.\d]*")/,
       },
       {
         name: "varkey",
-        match: /^(var)[ ]*[a-zA-Z _.\d]*/,
+        match: /^(var[ ]*[a-zA-Z_\d])*/,
       },
       {
         name: "prequire",
@@ -77,7 +77,7 @@ function update(text) {
       },
       {
         name: "require",
-        match: /^(request[ ]*[a-zA-Z \/_.\d]+)/,
+        match: /^(request[ ]*[a-zA-Z \/_\.\d]+)/,
       },
       {
         name: "iactionpre",
@@ -97,7 +97,7 @@ function update(text) {
       },
       {
         name: "iaction",
-        match: /^(mailman (mail|send) [a-zA-Z _.\d]+)/,
+        match: /^(mailman (mail|send))/,
       },
       {
         name: "iaction",
