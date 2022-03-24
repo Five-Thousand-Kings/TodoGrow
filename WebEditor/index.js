@@ -36,6 +36,10 @@ function update(text) {
   window.csHighlight({
     patterns: [
       {
+        name: "variable",
+        match: /^([a-zA-Z\d]+)/,
+      },
+      {
         name: "blocktoken",
         match: /^(else|end)/,
       },
@@ -46,10 +50,6 @@ function update(text) {
       {
         name: "conditionalchecked", // /^((while|if|elseif) [\(\)+\-*\/%\$a-zA-Z _.\d]+)/,
         match: /^((while|if|elseif))/,
-      },
-      {
-        name: "variable",
-        match: /^(\$[a-zA-Z\d]+)/,
       },
       {
         name: "token",
@@ -69,7 +69,7 @@ function update(text) {
       },
       {
         name: "varkey",
-        match: /^(var)[ ]*$[a-zA-Z _.\d]*/,
+        match: /^(var)[ ]*[a-zA-Z _.\d]*/,
       },
       {
         name: "prequire",
@@ -97,7 +97,7 @@ function update(text) {
       },
       {
         name: "iaction",
-        match: /^(mailman (mail|send) [\$a-zA-Z _.\d]+)/,
+        match: /^(mailman (mail|send) [a-zA-Z _.\d]+)/,
       },
       {
         name: "iaction",
@@ -113,7 +113,7 @@ function update(text) {
       },
       {
         name: "iaction",
-        match: /^((random (number|bool|boolean))|random[ ]*$)/,
+        match: /^((random (number|bool|boolean))|random[ ]*)/,
       },
       {
         name: "comment",
