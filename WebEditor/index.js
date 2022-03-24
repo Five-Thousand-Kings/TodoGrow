@@ -36,10 +36,6 @@ function update(text) {
   window.csHighlight({
     patterns: [
       {
-        name: "variable",
-        match: /^([a-zA-Z\d]+)/,
-      },
-      {
         name: "blocktoken",
         match: /^(else|end)/,
       },
@@ -69,7 +65,7 @@ function update(text) {
       },
       {
         name: "varkey",
-        match: /^(var[ ]*[a-zA-Z_\d])*/,
+        match: /^(var[ ]*[a-zA-Z_\d]*)/,
       },
       {
         name: "prequire",
