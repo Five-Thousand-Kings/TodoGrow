@@ -53,7 +53,7 @@ function update(text) {
       },
       {
         name: "token",
-        match: /^(set|add|remove|rmv|divide|div|multiply|mtp|ply|up|down)/,
+        match: /^(set|add|remove|rmv|divide|div|multiply|mtp|ply)/,
       },
       {
         name: "number",
